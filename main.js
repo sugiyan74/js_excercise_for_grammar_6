@@ -27,29 +27,29 @@
 //           - 第1引数で受けとった `message` の内容を `alert` を使ってアラートダイアログに表示する
 //   - kadai_3関数を実装した直後に「kadai_3(数値, コールバック関数)」を呼び出して、アラートダイアログのメッセージ内容が意図通りであることを確認する
 
-function kadai_3 (age, callback) {
+function kadai_3(age, callback) {
     let message;
     if(typeof age !== 'number') {
         message = '数値が入力されていません';
-    } else if(age >= 20)  {
+    } else if(age >= 20) {
         message = '値は20以上です';
     } else if(age >= 10) {
         message = '値は10以上20未満です';
     } else {
-         message = '値は10未満です';
+        message = '値は10未満です';
     }
-    callback (message);
+    callback(message);
 }
-kadai_3 (22,function(message) {
+kadai_3(22, function(message) {
     alert(message);
 });
-kadai_3 (19,function(message) {
+kadai_3(19, function(message) {
     alert(message);
 });
-kadai_3 (7,function(message) {
+kadai_3(7, function(message) {
     alert(message);
 });
-kadai_3 ('aaa',function(message) {
+kadai_3('aaa', function(message) {
     alert(message);
 });
 
@@ -60,6 +60,6 @@ kadai_3 ('aaa',function(message) {
 //   - 処理内容:
 //     - 第1引数のx, 第2引数のyを使って足し算した結果(「x + y」の結果)をconsole.logで出力する。
 
-(function(x,y) {
+(function(x, y) {
     console.log(x + y);
-})(1,4);
+})(1, 4);
